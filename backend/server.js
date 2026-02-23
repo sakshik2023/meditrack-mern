@@ -14,7 +14,7 @@ const app = express();
 // Middleware — allow configured frontend origin (or all origins in dev)
 app.use(
     cors({
-        origin: process.env.ALLOWED_ORIGIN || "*",
+        origin: "https://meditrack-frontend-eta.vercel.app || "*",
         credentials: true,
     })
 );
